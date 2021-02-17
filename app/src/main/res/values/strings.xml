@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="local_forecast">Local Forecast</string>
+    <string name="lightning">Lightning</string>
+    <string name="sunday">Sunday</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="enter_zip_code">Enter Zip Code</string>
+    <string name="zip">Zip Code</string>
+    <string name="update">Update</string>
+    <string name="current_conditions">Current Conditions</string>
+    <string name="humidity">Humidity: </string>
+    <string name="min_temp">Min Temp:  </string>
+    <string name="max_temp">Max Temp:  </string>
+</resources>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#271F29"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/lightning"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/thunderstorm" />
+
+    <TextView
+        android:id="@+id/forecastTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical"
+        android:text="@string/local_forecast"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="48dp"
+        android:textColor="#FFFFFF"
+
+        android:textSize="54sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtRealFeel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48dp"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTemp"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="108dp"
+        android:layout_marginStart="24dp" />
+
+
+    <LinearLayout
+        android:id="@+id/parentLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+
+            android:id="@+id/linLayout1"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:background="#CC333344"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:textAlignment="center"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:gravity="center"
+                android:textAlignment="center"
+                android:id="@+id/humidity"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:text="@string/humidity"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <TextView
+                android:gravity="center"
+                android:textAlignment="center"
+                android:id="@+id/minTemp"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:text="@string/min_temp"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <TextView
+                android:gravity="center"
+                android:textAlignment="center"
+                android:id="@+id/maxTemp"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:text="@string/max_temp"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linLayout2"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:background="#CC333344"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/linLayout1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:gravity="center"
+                android:textAlignment="center"
+                android:id="@+id/txtHumidity"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:text=""
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <TextView
+                android:gravity="center"
+                android:textAlignment="center"
+                android:id="@+id/txtMinTemp"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:text=""
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <TextView
+                android:gravity="center"
+                android:textAlignment="center"
+                android:id="@+id/txtMaxTemp"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:text=""
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
